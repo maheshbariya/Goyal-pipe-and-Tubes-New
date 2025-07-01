@@ -766,6 +766,7 @@ body {
 .modern-products {
   padding: var(--spacing-20) 0;
   background: var(--gray-50);
+  opacity: 1 !important;
 }
 
 .products-grid {
