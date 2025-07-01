@@ -328,7 +328,7 @@ function createBackToTopButton() {
         border: none;
         border-radius: 50%;
         cursor: pointer;
-        opacity: 0;
+        opacity: 1;
         visibility: hidden;
         transition: all 0.3s ease;
         z-index: 1000;
