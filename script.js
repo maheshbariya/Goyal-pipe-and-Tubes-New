@@ -76,33 +76,33 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Animate Elements on Scroll
-function animateOnScroll() {
-  const elements = document.querySelectorAll(
-    ".industry-card, .feature-card, .product-card, .testimonial-card, .process-step, .content-card, .trust-stat, .contact-method"
-  );
+// function animateOnScroll() {
+//   const elements = document.querySelectorAll(
+//     ".industry-card, .feature-card, .product-card, .testimonial-card, .process-step, .content-card, .trust-stat, .contact-method"
+//   );
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = "1";
-          entry.target.style.transform = "translateY(0)";
-        }
-      });
-    },
-    {
-      threshold: 0.1,
-      rootMargin: "0px 0px -50px 0px",
-    }
-  );
+//   const observer = new IntersectionObserver(
+//     (entries) => {
+//       entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//           entry.target.style.opacity = "1";
+//           entry.target.style.transform = "translateY(0)";
+//         }
+//       });
+//     },
+//     {
+//       threshold: 0.1,
+//       rootMargin: "0px 0px -50px 0px",
+//     }
+//   );
 
-  elements.forEach((element) => {
-    element.style.opacity = "0";
-    element.style.transform = "translateY(30px)";
-    element.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
-    observer.observe(element);
-  });
-}
+//   elements.forEach((element) => {
+//     element.style.opacity = "0";
+//     element.style.transform = "translateY(30px)";
+//     element.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
+//     observer.observe(element);
+//   });
+// }
 
 // Counter Animation for Stats
 function animateCounters() {
